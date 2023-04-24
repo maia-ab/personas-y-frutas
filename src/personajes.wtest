@@ -6,7 +6,7 @@ import equipo.*
 
 
 describe "Test Martin"{
-	test "test1" {
+	test "esta feliz porque jugo al voley y comio" {
 		martin.setDespensa(banana)
 		martin.realizarActividad(voley,30)
 		martin.alimentarse()
