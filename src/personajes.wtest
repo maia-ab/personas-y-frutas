@@ -1,0 +1,28 @@
+import personajes.*
+import actividades.*
+import alimentos.*
+import colores.*
+import equipo.*
+
+
+describe "Test Martin"{
+	test "test1" {
+		martin.setDespensa(banana)
+		martin.realizarActividad(voley,30)
+		martin.alimentarse()
+		assert.notThat(martin.esFeliz())
+		}
+	test "test2" {
+		martin.setDespensa(manzana)
+		martin.pasaElDia()
+		assert.equals(martin.getDespensa().getColor(),amarillo)
+		assert.equals(martin.getEnergia(), 150)
+		}
+	}
+
+describe "Test Maria"{
+	test "test1" {
+		maria.setAmuleto(verde)
+		assert.equals(maria.getEnergia(), 207)
+		}
+	}
